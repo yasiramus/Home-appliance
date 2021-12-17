@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+  
 }
 header{
     display: flex;
@@ -179,11 +180,36 @@ figure{
         color: aquamarine;
     }
     #testimonial{
-      position: relative;
       position: absolute;
       top: 112rem;
-      background-color: cadetblue;
-      width: 100%;
-      height: 100em;
+      background-color: #44cc93;
+      height: 800px;
+      text-align: center;
     }
-    
+    .testimonial{
+        margin: 4rem 12rem;
+        line-height: 35px;
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+    .testimonial h3{
+        margin-bottom: 10px;
+        color: #000;
+    }
+    .testimonial p {
+        margin-bottom: 15px;
+        color: rgb(29, 28, 28);
+    }
+    .testimonial details{
+        margin-bottom: 10px;
+        color: #000;
+    }
+    #instaImages{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        
+    }
+    #icons{
+        background-color: yellow;
+        font-size: 2rem;
+    }
