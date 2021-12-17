@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+#navbar{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar a{
+    color: #000;
+}
+#navbar a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    color: darkcyan;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    letter-spacing: 0.4rem;
+    text-shadow: 2px 2px 3px black;
+}
+.search{
+    position: relative;
+} 
+input{
+    margin-left: -2rem;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5em;
+        background-color: darkcyan;
+        /* appling transition to your work */
+        transition:width 0.3s; 
+    }
+    input::placeholder{
+        color: #000;
+    }
+    input:focus{
+        outline: 0;
+    }
+    .button{
+        margin-left: -3rem;
+        border-radius:5em;
+        position: absolute;
+        background-color: darkcyan;
+        top: -3px;
+        left: 6px;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        font-size:1rem;
+        transition: transform 0.3s ease;
+    }
+    .button:hover{
+        cursor:pointer;
+    }
+    .search.active input{
+        width: 200px;
+        height: 25px;
+        margin-left: -3rem;
+        margin-right: 2rem;
+        /* border: 2px solid red; */
+    }
+    .search.active .button{
+        transform: translatex(200px);
+        border: 2px solid rgb(64, 179, 131);
+    }
+    .fa{
+        color: #000;
+    }
+    /* main section */
+    #main{
+        background-image: url(../images/main.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        margin: 0 1.5rem;
+        text-align: center;
+        color: #000;
+    }
+    .h2{
+       padding: 8rem ;
+       text-transform: uppercase;
+       line-height: 10px;
+       letter-spacing: 3px;
+       font-size: 2rem;
+       animation: flip 3s alternate ease-in-out;
+    }
+    .h2 span{
+        color:rgb(64, 179, 131);
+    }
+    @keyframes flip{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform: rotateX(360deg);
+            letter-spacing: 0.5em;
+        }
+    }
+    .shopHere{
+        background-color: rgb(64, 179, 131);
+        color: #000;
+        font-size: 1rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 3px;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .shopHere:hover{
+        transition: .3s ease;
+        transform:scale(-1);
+        box-shadow: 0 0 6px rgb(31, 218, 140);
+    }
+    #recent{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-style: oblique; 
+    }
+    #recent a {
+        color: #000;
+        transition: color .2s ease;
+    }
+    #recent a:hover{
+        color: aquamarine;
+    }
+    figure img{
+        width: 100%;
+        height: 100%;
+    }
+figure{
+        height: 70rem;
+        width: 90rem;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        grid-template-rows: repeat(4, 300px);
+        row-gap: 50px;
+        column-gap: 15px;
+        margin: auto;
+    }
+    .figImg{
+        margin-top: -24rem;
+    }
+    .Popular_Product{
+       position: relative;
+       top: -25.3rem;
+       margin: 2rem;
+       font-size: 1.2rem;
+       font-weight: 400;
+       font-style: oblique;
+       color: #000;
+        transition: color .2s ease;
+    }
+    .Popular_Product:hover{
+        color: aquamarine;
+    }
+    #testimonial{
+      position: relative;
+      position: absolute;
+      top: 112rem;
+      background-color: cadetblue;
+      width: 100%;
+      height: 100em;
+    }
+    /* .testimonial{
+        position: absolute;
+      top: 112rem;
+      background-color: cadetblue;
+
+    } */
